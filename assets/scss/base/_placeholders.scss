@@ -1,0 +1,80 @@
+%container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 auto;
+
+}
+
+%abs-vert-align {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+%rel-hor-align {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+%flex {
+  display: flex;
+}
+
+%flex-hor-vert-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+
+%borrad50 {
+  border-radius: 50%;
+}
+ 
+
+%transition {
+  transition: 0.2s linear;
+}
+
+%flex-align-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%flex-space-beetw {
+  display: flex;
+  justify-content: space-between;
+}
+
+%borrad05 {
+  border-radius: 0.5rem;
+}
+
+%btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+
+%font-base {
+font-size: $font-size-base;}
+
+%font-base-second {
+font-size: $font-size-secondary;}
+
+%bor-rad-50 {
+  border-radius: 50%;
+}
+
+%font-monts {
+  font-family: 'Montserrat', sans-serif;
+}
+
+%font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+%font-kaushan {
+font-family: 'Kaushan Script',sans-serif;
+}

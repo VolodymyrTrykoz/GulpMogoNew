@@ -1,0 +1,27 @@
+@media only screen and (max-width: 1220px) {
+	.header__items {
+		justify-content: space-around; 
+	}
+}
+
+
+
+@media only screen and (max-width: 992px) {
+	.main-title {
+		font-size: 7rem;
+	}
+
+	.main-subtitle {
+		font-size: 5rem;
+	}
+
+	.list__item {
+		padding: 0 0.5rem;
+	}
+
+	.indicators__link {
+		font-size: 1rem;
+	}
+
+}	
+
