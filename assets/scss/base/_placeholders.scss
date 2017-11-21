@@ -46,6 +46,11 @@
   justify-content: space-between;
 }
 
+%flex-space-arounr {
+  display: flex;
+  justify-content: space-around;
+}
+
 %borrad05 {
   border-radius: 0.5rem;
 }

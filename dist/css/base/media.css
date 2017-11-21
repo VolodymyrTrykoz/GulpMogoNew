@@ -11,6 +11,9 @@
   .list__item {
     padding: 0 0.5rem; }
   .indicators__link {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .story__item-box {
+    width: 65%;
+    margin: 15px auto; } }
 
 /*# sourceMappingURL=media.css.map */

@@ -12,7 +12,7 @@
 
 @import "base/_variables";
 @import "base/placeholders";
-@import "base/_bootstrap-grid"; // bootstrap v4 grid
+
 
 
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,600,700,800,900|Roboto');
@@ -26,18 +26,13 @@
 
 */
 
-html {
-  font-size: 62.5%;
-  
-  
-}
+html {font-size: 62.5%;}
 
-a {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-}
+body {font-family: $primary_font;}
+
+a {text-decoration: none;}
+
+a:hover {text-decoration: none;}
 
 ul, li {
   list-style: none;
@@ -45,14 +40,14 @@ ul, li {
 }
 
 .container {
-  width: 120rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 0;
 }
 
 .header  {
   @extend %rel-hor-align;
-  max-width: 100%;
+  width: 100%;
   color: white;
   padding-top: 2rem;
   font-family: $primary_font;
@@ -318,3 +313,79 @@ ul, li {
     border: none;
     margin-top: 2.8rem;
   }
+
+
+.story__wrap {
+  @extend %flex-space-arounr;
+}
+
+.story__item {
+  opacity: 0.9;
+}
+
+.story__item-box {
+  position: relative;
+  width: 100%;
+  transition: 0.2s linear;
+          &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background: linear-gradient(to bottom, rgba(239, 139, 138, .9) 0%, rgba(228, 215, 135, .9) 100%);
+          opacity: 0;
+          -webkit-transition: 0.2s linear;
+          -o-transition: 0.2s linear;
+          transition: 0.2s linear;
+          cursor: pointer;
+          }
+          &:hover {
+              box-shadow: 10px 10px #95e1d3;   
+              transform: translate(-10px, -10px);
+                &:after {
+                  opacity: 1;
+              }
+          } 
+}                   
+          
+         
+
+
+
+.addinf__text, .icon--users {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+  transition: 0.2s linear;
+  opacity: 0;
+}
+
+.icon--users {
+  top: 43%;
+
+}
+
+.story__item-box:hover .addinf__text,
+.story__item-box:hover .icon--users {
+  opacity: 1;
+}
+
+.picture-item__addinf:hover .icon--users,
+.picture-item__addinf:hover .addinf__text
+ {
+  color: #95e1d3;
+}
+
+
+.item__img {
+  width: 100%;
+}
+
