@@ -37,21 +37,23 @@ a:hover {text-decoration: none;}
 ul, li {
   list-style: none;
   margin: 0;
-}
-
-.container {
-  max-width: 120rem;
-  margin: 0 auto;
   padding: 0;
 }
 
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+ 
+} 
+
 .header  {
   @extend %rel-hor-align;
-  width: 100%;
   color: white;
   padding-top: 2rem;
   font-family: $primary_font;
   z-index: 100;
+  width: 1200px;
+  margin: 0 auto;
 
 }
 
@@ -159,9 +161,6 @@ ul, li {
 
 .section0:before {
   content: '';
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(239, 139, 138, .9)), to(rgba(228, 215, 135, .9)));
-  background: -webkit-linear-gradient(top, rgba(239, 139, 138, .9) 0%, rgba(228, 215, 135, .9) 100%);
-  background: -o-linear-gradient(top, rgba(239, 139, 138, .9) 0%, rgba(228, 215, 135, .9) 100%);
   background: linear-gradient(to bottom, rgba(239, 139, 138, .9) 0%, rgba(228, 215, 135, .9) 100%);
   position: absolute;
   height: 100%;
@@ -273,7 +272,7 @@ ul, li {
   }
 
   .section-box {
-    padding: 9.7rem 0 10.5rem;
+    padding: 9.7rem 0 11rem;
   }
 
   .heading-box {
@@ -285,14 +284,15 @@ ul, li {
   .main-heading {
     font-size: 2.4rem;
     font-family: 'Kaushan Script',sans-serif;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.4rem;
   }
 
   .subheading {
     font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.1rem;
+    letter-spacing: -1px;
+    
   }
 
   .paragraph {
@@ -315,17 +315,14 @@ ul, li {
   }
 
 
-.story__wrap {
-  @extend %flex-space-arounr;
-}
+  .story__wrap {
+    @extend %flex-space-arounr;
+  }
 
-.story__item {
-  opacity: 0.9;
-}
 
 .story__item-box {
+  @extend %transition;
   position: relative;
-  width: 100%;
   transition: 0.2s linear;
           &:after {
           content: '';
@@ -336,13 +333,10 @@ ul, li {
           right: 0;
           background: linear-gradient(to bottom, rgba(239, 139, 138, .9) 0%, rgba(228, 215, 135, .9) 100%);
           opacity: 0;
-          -webkit-transition: 0.2s linear;
-          -o-transition: 0.2s linear;
-          transition: 0.2s linear;
           cursor: pointer;
           }
           &:hover {
-              box-shadow: 10px 10px #95e1d3;   
+              box-shadow: 10px 10px $light-blue;   
               transform: translate(-10px, -10px);
                 &:after {
                   opacity: 1;
@@ -355,6 +349,7 @@ ul, li {
 
 
 .addinf__text, .icon--users {
+  @extend %transition;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -362,14 +357,14 @@ ul, li {
   transform: translate(-50%, -50%);
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 1.8rem;
   color: #fff;
-  transition: 0.2s linear;
   opacity: 0;
 }
 
 .icon--users {
-  top: 43%;
+  font-size: 2rem;
+  top: 40%;
 
 }
 
@@ -389,3 +384,102 @@ ul, li {
   width: 100%;
 }
 
+
+
+
+.data {
+  color: #fff;
+  background: $light-blue;     
+                &-item {
+                  float: left;
+                  width: 20%;
+                  text-align: center;
+                  padding-top: 6.3rem;
+                  padding-bottom: 8rem;
+                  text-transform: uppercase;
+                  border-left: 1px solid #b5eae0;
+                      & span {
+                        font-size: $font-size-secondary;
+                      }
+                      &:last-child {
+                        border-right: 1px solid #b5eae0
+                      }
+                }
+}
+
+
+.number {
+    font-size: 7.2rem;
+    font-weight: 700;
+}
+
+.services {
+  padding:{
+    left: 4rem;
+    top: 0px;
+    bottom: 3.5rem;
+  }
+}
+
+.service__item {
+  margin-top: 4.8rem;
+}
+
+
+.service-box {
+  padding-top: 10rem;
+  padding-bottom: 14rem;
+}
+
+.service__item-icon  {
+  float: left;
+  font-size: 3rem;
+  color: $light-blue;
+}
+
+.service__item-text {
+  margin-left: 5rem;
+  margin-bottom: 5rem;
+}
+
+.item-text__heading {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: $font-size-secondary;
+}
+
+.item-text__p {
+  font-family: $secondary_font;
+  font-size: $font-size-base;
+  color: #999;
+  padding-top: 6px;
+
+}
+
+
+.service__item:nth-child(-n + 3):after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #e5e5e5;
+  margin-bottom: 5rem;
+}
+
+
+
+.heading-box-service {
+  margin-top: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+
+
+
+.design {
+  background-image: url(../img/section4_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}

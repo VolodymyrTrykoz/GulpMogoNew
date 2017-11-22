@@ -17,6 +17,26 @@ $global-font-icon: 'social';
     /* Some common icon stuff */
   }
 
+  &.icon--alarm {
+    &:before {
+      content: $icon-alarm;
+    }
+  }
+  &.icon--creat {
+    &:before {
+      content: $icon-creat;
+    }
+  }
+  &.icon--css {
+    &:before {
+      content: $icon-css;
+    }
+  }
+  &.icon--digit {
+    &:before {
+      content: $icon-digit;
+    }
+  }
   &.icon--drbbbl {
     &:before {
       content: $icon-drbbbl;
@@ -47,6 +67,11 @@ $global-font-icon: 'social';
       content: $icon-pint;
     }
   }
+  &.icon--seo2 {
+    &:before {
+      content: $icon-seo2;
+    }
+  }
   &.icon--shopp {
     &:before {
       content: $icon-shopp;
@@ -65,6 +90,11 @@ $global-font-icon: 'social';
   &.icon--users {
     &:before {
       content: $icon-users;
+    }
+  }
+  &.icon--webdsgn {
+    &:before {
+      content: $icon-webdsgn;
     }
   }
   &.icon--youtb {

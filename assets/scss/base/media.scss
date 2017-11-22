@@ -28,6 +28,11 @@
   		margin: 15px auto;
   	}
 
+
+  	.service__item:nth-child(-n + 6):after{
+  	    width: 85%;
+    }
+
 }	
 
 

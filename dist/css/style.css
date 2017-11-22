@@ -391,7 +391,7 @@ th {
 
 .item__link,
 .icon--shopp,
-.icon--magnif, .item__link:after {
+.icon--magnif, .item__link:after, .story__item-box, .addinf__text, .icon--users {
   -webkit-transition: 0.2s linear;
   -o-transition: 0.2s linear;
   transition: 0.2s linear; }
@@ -440,7 +440,9 @@ th {
     font-size: 1rem; }
   .story__item-box {
     width: 65%;
-    margin: 15px auto; } }
+    margin: 15px auto; }
+  .service__item:nth-child(-n + 6):after {
+    width: 85%; } }
 
 @font-face {
   font-family: "social";
@@ -453,28 +455,40 @@ th {
   font-family: "social"; }
   .icon:before {
     /* Some common icon stuff */ }
-  .icon.icon--drbbbl:before {
+  .icon.icon--alarm:before {
     content: ""; }
-  .icon.icon--fb:before {
+  .icon.icon--creat:before {
     content: ""; }
-  .icon.icon--gooogle:before {
+  .icon.icon--css:before {
     content: ""; }
-  .icon.icon--inst:before {
+  .icon.icon--digit:before {
     content: ""; }
-  .icon.icon--magnif:before {
+  .icon.icon--drbbbl:before {
     content: ""; }
-  .icon.icon--pint:before {
+  .icon.icon--fb:before {
     content: ""; }
-  .icon.icon--shopp:before {
+  .icon.icon--gooogle:before {
     content: ""; }
-  .icon.icon--tmblr:before {
+  .icon.icon--inst:before {
     content: ""; }
-  .icon.icon--twitt:before {
+  .icon.icon--magnif:before {
     content: ""; }
-  .icon.icon--users:before {
+  .icon.icon--pint:before {
     content: ""; }
-  .icon.icon--youtb:before {
+  .icon.icon--seo2:before {
     content: ""; }
+  .icon.icon--shopp:before {
+    content: ""; }
+  .icon.icon--tmblr:before {
+    content: ""; }
+  .icon.icon--twitt:before {
+    content: ""; }
+  .icon.icon--users:before {
+    content: ""; }
+  .icon.icon--webdsgn:before {
+    content: ""; }
+  .icon.icon--youtb:before {
+    content: ""; }
 
 .header {
   position: absolute;
@@ -490,7 +504,7 @@ th {
 
 .item__link,
 .icon--shopp,
-.icon--magnif, .item__link:after {
+.icon--magnif, .item__link:after, .story__item-box, .addinf__text, .icon--users {
   -webkit-transition: 0.2s linear;
   -o-transition: 0.2s linear;
   transition: 0.2s linear; }
@@ -538,19 +552,20 @@ a:hover {
 
 ul, li {
   list-style: none;
-  margin: 0; }
-
-.container {
-  max-width: 120rem;
-  margin: 0 auto;
+  margin: 0;
   padding: 0; }
 
+.container {
+  max-width: 1230px;
+  margin: 0 auto; }
+
 .header {
-  width: 100%;
   color: white;
   padding-top: 2rem;
   font-family: "Montserrat", sans-serif;
-  z-index: 100; }
+  z-index: 100;
+  width: 1200px;
+  margin: 0 auto; }
 
 .header-logo {
   font-size: 3rem;
@@ -613,8 +628,8 @@ ul, li {
 
 .section0:before {
   content: '';
-  background: -o-linear-gradient(top, rgba(239, 139, 138, 0.9) 0%, rgba(228, 215, 135, 0.9) 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(239, 139, 138, 0.9)), to(rgba(228, 215, 135, 0.9)));
+  background: -o-linear-gradient(top, rgba(239, 139, 138, 0.9) 0%, rgba(228, 215, 135, 0.9) 100%);
   background: linear-gradient(to bottom, rgba(239, 139, 138, 0.9) 0%, rgba(228, 215, 135, 0.9) 100%);
   position: absolute;
   height: 100%;
@@ -697,7 +712,7 @@ ul, li {
   font-size: 2.4rem; }
 
 .section-box {
-  padding: 9.7rem 0 10.5rem; }
+  padding: 9.7rem 0 11rem; }
 
 .heading-box {
   text-align: center;
@@ -707,13 +722,13 @@ ul, li {
 .main-heading {
   font-size: 2.4rem;
   font-family: 'Kaushan Script',sans-serif;
-  margin-bottom: 0.2rem; }
+  margin-bottom: 0.4rem; }
 
 .subheading {
   font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.1rem; }
+  letter-spacing: -1px; }
 
 .paragraph {
   text-align: center;
@@ -729,12 +744,8 @@ ul, li {
   border: none;
   margin-top: 2.8rem; }
 
-.story__item {
-  opacity: 0.9; }
-
 .story__item-box {
   position: relative;
-  width: 100%;
   -webkit-transition: 0.2s linear;
   -o-transition: 0.2s linear;
   transition: 0.2s linear; }
@@ -749,9 +760,6 @@ ul, li {
     background: -o-linear-gradient(top, rgba(239, 139, 138, 0.9) 0%, rgba(228, 215, 135, 0.9) 100%);
     background: linear-gradient(to bottom, rgba(239, 139, 138, 0.9) 0%, rgba(228, 215, 135, 0.9) 100%);
     opacity: 0;
-    -webkit-transition: 0.2s linear;
-    -o-transition: 0.2s linear;
-    transition: 0.2s linear;
     cursor: pointer; }
   .story__item-box:hover {
     -webkit-box-shadow: 10px 10px #95e1d3;
@@ -772,15 +780,13 @@ ul, li {
           transform: translate(-50%, -50%);
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 1.8rem;
   color: #fff;
-  -webkit-transition: 0.2s linear;
-  -o-transition: 0.2s linear;
-  transition: 0.2s linear;
   opacity: 0; }
 
 .icon--users {
-  top: 43%; }
+  font-size: 2rem;
+  top: 40%; }
 
 .story__item-box:hover .addinf__text,
 .story__item-box:hover .icon--users {
@@ -792,5 +798,76 @@ ul, li {
 
 .item__img {
   width: 100%; }
+
+.data {
+  color: #fff;
+  background: #95e1d3; }
+  .data-item {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding-top: 6.3rem;
+    padding-bottom: 8rem;
+    text-transform: uppercase;
+    border-left: 1px solid #b5eae0; }
+    .data-item span {
+      font-size: 1.4rem; }
+    .data-item:last-child {
+      border-right: 1px solid #b5eae0; }
+
+.number {
+  font-size: 7.2rem;
+  font-weight: 700; }
+
+.services {
+  padding-left: 4rem;
+  padding-top: 0px;
+  padding-bottom: 3.5rem; }
+
+.service__item {
+  margin-top: 4.8rem; }
+
+.service-box {
+  padding-top: 10rem;
+  padding-bottom: 14rem; }
+
+.service__item-icon {
+  float: left;
+  font-size: 3rem;
+  color: #95e1d3; }
+
+.service__item-text {
+  margin-left: 5rem;
+  margin-bottom: 5rem; }
+
+.item-text__heading {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.4rem; }
+
+.item-text__p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #999;
+  padding-top: 6px; }
+
+.service__item:nth-child(-n + 3):after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #e5e5e5;
+  margin-bottom: 5rem; }
+
+.heading-box-service {
+  margin-top: 0.4rem;
+  margin-bottom: 1.5rem; }
+
+.design {
+  background-image: url(../img/section4_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */
