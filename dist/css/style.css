@@ -492,28 +492,32 @@ th {
     content: ""; }
   .icon.icon--inst:before {
     content: ""; }
-  .icon.icon--magnif:before {
+  .icon.icon--left-arrow:before {
     content: ""; }
-  .icon.icon--photo:before {
+  .icon.icon--magnif:before {
     content: ""; }
-  .icon.icon--pint:before {
+  .icon.icon--photo:before {
     content: ""; }
-  .icon.icon--seo2:before {
+  .icon.icon--pint:before {
     content: ""; }
-  .icon.icon--shopp:before {
+  .icon.icon--right-arrow:before {
     content: ""; }
-  .icon.icon--tmblr:before {
+  .icon.icon--seo2:before {
     content: ""; }
-  .icon.icon--twitt:before {
+  .icon.icon--shopp:before {
     content: ""; }
-  .icon.icon--users:before {
+  .icon.icon--tmblr:before {
     content: ""; }
-  .icon.icon--web-des:before {
+  .icon.icon--twitt:before {
     content: ""; }
-  .icon.icon--webdsgn:before {
+  .icon.icon--users:before {
     content: ""; }
-  .icon.icon--youtb:before {
+  .icon.icon--web-des:before {
     content: ""; }
+  .icon.icon--webdsgn:before {
+    content: ""; }
+  .icon.icon--youtb:before {
+    content: ""; }
 
 .header {
   position: absolute;
@@ -998,5 +1002,38 @@ ul, li {
 .carousel-page {
   width: 80%;
   margin: 0 auto; }
+
+.carousel-wrapper {
+  position: relative; }
+
+.carousel-wrapper .icon {
+  font-size: 20px;
+  color: #ccc; }
+
+.carousel-page__img {
+  border: 3px solid #95e1d3;
+  padding: 40px;
+  margin-right: 60px;
+  float: left; }
+
+.carousel-page__blcquote {
+  font-family: Roboto,sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  color: #999; }
+
+.carousel-page__author {
+  color: #333;
+  font-size: 24px;
+  font-family: 'Kaushan Script',sans-serif; }
+
+.carousel-page__author:before {
+  content: "";
+  display: block;
+  float: left;
+  width: 60px;
+  height: 3px;
+  background-color: red;
+  margin: 15px 15px 15px 0; }
 
 /*# sourceMappingURL=style.css.map */

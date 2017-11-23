@@ -619,3 +619,46 @@ ul, li {
   width: 80%;
   margin: 0 auto;
 }
+
+.carousel-wrapper {
+  position: relative;
+}
+
+.carousel-wrapper .icon {
+  font-size: 20px;
+  color: #ccc;
+
+}
+
+.carousel-page__img {
+  border: 3px solid $light-blue;
+  padding: 40px;
+  margin-right: 60px;
+  float: left;
+}
+
+.carousel-page__blcquote {
+  font-family: Roboto,sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    color: #999;
+}
+
+.carousel-page__author {
+    color: #333;
+    font-size: 24px;
+    font-family: 'Kaushan Script',sans-serif;
+}
+
+.carousel-page__author:before {
+    content: "";
+    display: block;
+    float: left;
+    width: 60px;
+    height: 3px;
+    background-color: red;
+    margin: 15px 15px 15px 0;
+}
+
+
+

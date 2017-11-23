@@ -67,6 +67,11 @@ $global-font-icon: 'social';
       content: $icon-inst;
     }
   }
+  &.icon--left-arrow {
+    &:before {
+      content: $icon-left-arrow;
+    }
+  }
   &.icon--magnif {
     &:before {
       content: $icon-magnif;
@@ -80,6 +85,11 @@ $global-font-icon: 'social';
   &.icon--pint {
     &:before {
       content: $icon-pint;
+    }
+  }
+  &.icon--right-arrow {
+    &:before {
+      content: $icon-right-arrow;
     }
   }
   &.icon--seo2 {
