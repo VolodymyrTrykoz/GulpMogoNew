@@ -15,7 +15,16 @@
   .story__item-box {
     width: 65%;
     margin: 15px auto; }
-  .service__item:nth-child(-n + 6):after {
-    width: 85%; } }
+  .service__item:nth-child(-n + 5):after {
+    content: '';
+    position: absolute;
+    width: 85%;
+    height: 1px;
+    background: #e5e5e5;
+    margin-bottom: 5rem; } }
+
+@media only screen and (max-width: 768px) {
+  .duties__img .img-responsive {
+    margin: 2rem auto; } }
 
 /*# sourceMappingURL=media.css.map */

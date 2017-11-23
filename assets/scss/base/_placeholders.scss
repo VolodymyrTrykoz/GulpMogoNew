@@ -21,6 +21,16 @@
   justify-content: center;
   align-items: center;}
 
+%flex-vert-center {
+  display: flex;
+  align-items: center;
+}  
+
+%flex-hor-center {
+  display: flex;
+  justify-content: center;
+}  
+
 %borrad50 {
   border-radius: 50%;
 }

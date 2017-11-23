@@ -22,6 +22,11 @@ $global-font-icon: 'social';
       content: $icon-alarm;
     }
   }
+  &.icon--arrow {
+    &:before {
+      content: $icon-arrow;
+    }
+  }
   &.icon--creat {
     &:before {
       content: $icon-creat;
@@ -42,6 +47,11 @@ $global-font-icon: 'social';
       content: $icon-drbbbl;
     }
   }
+  &.icon--equal {
+    &:before {
+      content: $icon-equal;
+    }
+  }
   &.icon--fb {
     &:before {
       content: $icon-fb;
@@ -60,6 +70,11 @@ $global-font-icon: 'social';
   &.icon--magnif {
     &:before {
       content: $icon-magnif;
+    }
+  }
+  &.icon--photo {
+    &:before {
+      content: $icon-photo;
     }
   }
   &.icon--pint {
@@ -90,6 +105,11 @@ $global-font-icon: 'social';
   &.icon--users {
     &:before {
       content: $icon-users;
+    }
+  }
+  &.icon--web-des {
+    &:before {
+      content: $icon-web-des;
     }
   }
   &.icon--webdsgn {
