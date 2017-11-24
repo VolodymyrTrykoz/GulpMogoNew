@@ -6,10 +6,17 @@
   transform: translateY(-50%);
 }
 
-%rel-hor-align {
+%abs-hor-align {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
+
+%abs-center-align {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 %flex {
@@ -87,4 +94,19 @@ font-size: $font-size-secondary;}
 
 %font-kaushan {
 font-family: 'Kaushan Script',sans-serif;
+}
+
+%gradient {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: -1px;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(239, 139, 138, .9) 0%, rgba(228, 215, 135, .9) 100%);
+}
+
+%gradient-animation-start {
+  width: 0%;
+  height: 0%
 }

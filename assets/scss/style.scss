@@ -47,7 +47,7 @@ ul, li {
 } 
 
 .header  {
-  @extend %rel-hor-align;
+  @extend %abs-hor-align;
   color: white;
   padding-top: 2rem;
   font-family: $primary_font;
@@ -160,11 +160,7 @@ ul, li {
 }
 
 .section0:before {
-  content: '';
-  background: linear-gradient(to bottom, rgba(239, 139, 138, .9) 0%, rgba(228, 215, 135, .9) 100%);
-  position: absolute;
-  height: 100%;
-  width: 100%;  
+  @extend %gradient;
 }
 
 .main-carousel {
@@ -305,6 +301,9 @@ ul, li {
           &-box {
             margin-bottom: 10rem;
           }
+          &-team-box {
+            margin-bottom: 9rem;
+          }
            &-accordion-box {
             margin-bottom: 9rem;
            } 
@@ -328,13 +327,7 @@ ul, li {
   position: relative;
   transition: 0.2s linear;
           &:after {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          right: 0;
-          background: linear-gradient(to bottom, rgba(239, 139, 138, .9) 0%, rgba(228, 215, 135, .9) 100%);
+          @extend %gradient;
           opacity: 0;
           cursor: pointer;
           }
@@ -586,15 +579,15 @@ ul, li {
 .accodion-scroll {
   @extend  %ordin-text-style;
   overflow: auto;
-  height: 13rem;
+  height: 12rem;
   margin: 1.5rem 3rem 2rem 1.5rem;
-  padding: 0 6px;
+  padding: 0 0.6rem;
       &::-webkit-scrollbar {
         width: 0.5rem;
       }
       &::-webkit-scrollbar-thumb {
         margin-top: 0.7rem;
-        margin-left: 25px;
+        margin-left: 2.5rem;
         border-radius: 0.2rem;
         -webkit-box-shadow: inset 1rem 0 0 rgba(149,225,211,1); 
       }
@@ -612,7 +605,7 @@ ul, li {
 
 .gray-bg {
   background: $gray-bg;
-  padding: 100px 0;
+  padding: 69px 0;
 }
 
 .carousel-page {
@@ -638,26 +631,210 @@ ul, li {
 }
 
 .carousel-page__blcquote {
-  font-family: Roboto,sans-serif;
-    font-size: 24px;
-    font-style: italic;
-    color: #999;
+  @extend %font-roboto;
+  font-size: 24px;
+  font-style: italic;
+  color: #999;
 }
 
 .carousel-page__author {
-    color: #333;
-    font-size: 24px;
-    font-family: 'Kaushan Script',sans-serif;
+  @extend %font-kaushan;
+  color: #333;
+  font-size: 24px;
+  
 }
 
 .carousel-page__author:before {
-    content: "";
-    display: block;
-    float: left;
-    width: 60px;
-    height: 3px;
-    background-color: red;
-    margin: 15px 15px 15px 0;
+  content: "";
+  display: block;
+  float: left;
+  width: 60px;
+  height: 3px;
+  background-color: red;
+  margin: 15px 15px 15px 0;
+}
+
+
+
+.carousel-control-size {
+  width: 85px;
+}
+
+
+.team-box {
+  padding-top: 9rem;
+}
+
+.team-wrapper {
+  margin-bottom: 10rem;
+}
+
+
+.picture-item {
+  @extend %transition;
+  position: relative;
+  overflow: hidden;
+        &__social {
+        @extend %abs-center-align;
+        @extend %transition;
+        display: flex;
+        z-index: 5;
+        opacity: 0;
+        
+        }
+
+        &:after {
+        @extend %gradient;
+        @extend %gradient-animation-start;
+        opacity: 0;
+        }
+
+        &:hover {
+        box-shadow: 10px 10px #95e1d3;
+        transform: translate(-10px, -10px);
+                &:after {
+                @extend %transition;  
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+                }
+               
+        }        
+}
+
+.picture-item:hover .picture-item__social {
+  opacity: 1;  
+}
+
+.item__social-link .icon {
+  @extend %transition;
+  display: inline-block;
+  color: $link-pink;
+  background: $link-hover;
+  font-size: 23px;
+  padding: 15px 25px;
+  flex-wrap: nowrap;
+}
+
+.item__social-link:hover .icon {
+  color: #fff;
+  background: $link-pink;
+}
+
+
+.picture-item__name {
+    text-transform: uppercase;
+    font-size: $font-size-secondary;
+    color: #333;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.picture-item__job {
+    font-size: $font-size-base;
+    font-style: italic;
+    font-weight: 300;
+    color: #999;
+    text-align: center;
+}
+
+.brends-box {
+  padding: 50px 0;
+  background: $gray-bg;
+}
+
+.brands-box__position {
+  @extend %flex-align-center;
+}
+
+.gallery-box {
+  padding-top: 100px;
+}
+
+.heading-box__text {
+  padding-top: 36px;
+}
+
+
+
+portfolio {
+  text-align: center;
+  margin: 0 auto;
+}
+.pf__image {
+  vertical-align: top;
+  width: 100%;
+  
+}
+
+/*making gradient-hover effect*/
+.portfolio-basis {
+  position: relative;
+  margin: 0;
+}
+
+
+.portfolio-basis-item {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 15px;
+  color: #fff;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+  opacity: 0;
+
+}
+
+
+.portfolio-basis:after {
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(239, 139, 138, .9)), to(rgba(228, 215, 135, .9)));
+  background: -webkit-linear-gradient(top, rgba(239, 139, 138, .9) 0%, rgba(228, 215, 135, .9) 100%);
+  background: -o-linear-gradient(top, rgba(239, 139, 138, .9) 0%, rgba(228, 215, 135, .9) 100%);
+  background: linear-gradient(to bottom, rgba(239, 139, 138, .9) 0%, rgba(228, 215, 135, .9) 100%);
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+  opacity: 0;
+
+}
+.portfolio-pointer:hover .portfolio-basis-item,
+.portfolio-pointer:hover .portfolio-basis:after {
+  opacity: 1;
+  
+}
+
+.portfolio-basis-item:hover {
+  color: #95e1d3;
+  cursor: pointer;
+}
+/*end gradient-hover effect*/
+
+.basis-item__icon {
+  font-size: 30px;
+}
+
+.basis-item__obligation {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.basis-item__descr {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
 }
 
 
