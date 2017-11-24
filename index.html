@@ -47,7 +47,7 @@
 		<section class="section0">
 			<div class="container">
 				<div id="carouselExampleIndicators" class="main-carousel carousel slide" data-ride="carousel" data-interval="5000000" data-pause="false">
-						<div class="carousel-inner" role="listbox">
+						<div class="row carousel-inner" role="listbox">
 							
 							<div class="carousel-item active">
 							  	<div class="">
@@ -539,7 +539,7 @@
 							<a href="#">
 								<img src="dist/img/pf1.jpg" alt="pf1" class="pf__image">
 								<div class="portfolio-basis-item">
-									<i class="fa fa-picture-o basis-item__icon" aria-hidden="true"></i>
+									<span class="icon icon--photo"></span>
 									<p class="basis-item__obligation">creatively designed</p>
 									<p class="basis-item__descr">Lorem ipsum dolor sit</p>
 								</div>
@@ -553,7 +553,7 @@
 							<a href="#">
 								<img src="dist/img/pf2.jpg" alt="pf2" class="pf__image">
 								<div class="portfolio-basis-item">
-									<i class="fa fa-picture-o basis-item__icon" aria-hidden="true"></i>
+									<span class="icon icon--photo"></span>
 									<p class="basis-item__obligation">creatively designed</p>
 									<p class="basis-item__descr">Lorem ipsum dolor sit</p>
 								</div>
@@ -566,7 +566,7 @@
 							<a href="#">
 								<img src="dist/img/pf3.jpg" alt="pf3" class="pf__image">
 								<div class="portfolio-basis-item">
-									<i class="fa fa-picture-o basis-item__icon" aria-hidden="true"></i>
+									<span class="icon icon--photo"></span>
 									<p class="basis-item__obligation">creatively designed</p>
 									<p class="basis-item__descr">Lorem ipsum dolor sit</p>
 								</div>
@@ -579,7 +579,7 @@
 							<a href="#">
 								<img src="dist/img/pf4.jpg" alt="pf4" class="pf__image">
 								<div class="portfolio-basis-item">
-									<i class="fa fa-picture-o basis-item__icon" aria-hidden="true"></i>
+									<span class="icon icon--photo"></span>
 									<p class="basis-item__obligation">creatively designed</p>
 									<p class="basis-item__descr">Lorem ipsum dolor sit</p>
 								</div>
@@ -597,7 +597,7 @@
 							<a href="#">
 								<img src="dist/img/pf5.jpg" alt="pf5" class="pf__image">
 								<div class="portfolio-basis-item">
-									<i class="fa fa-picture-o basis-item__icon" aria-hidden="true"></i>
+									<span class="icon icon--photo"></span>
 									<p class="basis-item__obligation">creatively designed</p>
 									<p class="basis-item__descr">Lorem ipsum dolor sit</p>
 								</div>
@@ -610,7 +610,7 @@
 							<a href="#">
 								<img src="dist/img/pf6.jpg" alt="pf6" class="pf__image">
 								<div class="portfolio-basis-item">
-									<i class="fa fa-picture-o basis-item__icon" aria-hidden="true"></i>
+									<span class="icon icon--photo"></span>
 									<p class="basis-item__obligation">creatively designed</p>
 									<p class="basis-item__descr">Lorem ipsum dolor sit</p>
 								</div>
@@ -623,7 +623,7 @@
 							<a href="#">
 								<img src="dist/img/pf7.jpg" alt="pf7" class="pf__image">
 								<div class="portfolio-basis-item">
-									<i class="fa fa-picture-o basis-item__icon" aria-hidden="true"></i>
+									<span class="icon icon--photo"></span>
 									<p class="basis-item__obligation">creatively designed</p>
 									<p class="basis-item__descr">Lorem ipsum dolor sit</p>
 								</div>
@@ -633,9 +633,74 @@
 
 			</tr>
 
-		</table>
-		</section>			
+			</table>
+		</section>	
+
+
+		<section class="third-carousel">
+			<div class="container">
+
+			<div class="row carousel-wrapper">
+				<!--carousel-->
+						<div id="carouselExampleControls3" class="carousel slide" data-ride="carousel" data-interval="500000">
+						
+					  		<div class="carousel-inner" role="listbox">
+					    		<div class="carousel-item active">
+					    			<div class="carousel-page">
+					    				<img src="dist/img/carousel-3.png" alt="quote-img" class="carousel-img">
+					    				<blockquote class="carousel-page__blcquote carousel-page__blcquote--indent">
+					      					“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+					      				</blockquote>	
+					      					<span class="carousel-page__author">Joe Doe</span>	
+					      			</div>	
+					    		</div>
+
+					    		<div class="carousel-item">
+					    			<div class="carousel-page">
+					    				<img src="dist/img/carousel-3.png" alt="quote-img" class="carousel-img">
+					    				<blockquote class="carousel-page__blcquote carousel-page__blcquote--indent">
+					      					“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+					      				</blockquote>	
+					      					<span class="carousel-page__author">Joe Doe</span>	
+					      			</div>	
+					    		</div>
+
+					    		<div class="carousel-item">
+					    			<div class="carousel-page">
+					    				<img src="dist/img/carousel-3.png" alt="quote-img" class="carousel-img" >
+					    				<blockquote class="carousel-page__blcquote carousel-page__blcquote--indent">
+					      					“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+					      				</blockquote>	
+					      					<span class="carousel-page__author">Joe Doe</span>	
+					      			</div>	
+					    		</div>
+					  		</div>
+						</div>
+					
+							<a class="carousel-control-prev control-size" href="#carouselExampleControls3" role="button" data-slide="prev">
+							    <span class="icon icon--left-arrow"></span>
+							    <span class="sr-only">Previous</span>
+							</a>
+
+							<a class="carousel-control-next control-size" href="#carouselExampleControls3" role="button" data-slide="next">
+							    <span class="icon icon--right-arrow"></span>
+							    <span class="sr-only">Next</span>
+							</a>
+			</div>
+			</div>
+		</section>		
 	
+
+
+		<section class="third-carousel client-bg">
+			<div class="container">
+				<div class="heading-box">
+					<div class="main-heading">Who we do</div>
+					<div class="subheading">some of our work</div>
+					<hr class="divider divider--red"></hr>
+				</div>	
+			</div>
+		</section>		
 
 
 	<!-- Bootstrap core JavaScript-->	 
