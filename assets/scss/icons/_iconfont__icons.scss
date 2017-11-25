@@ -27,6 +27,11 @@ $global-font-icon: 'social';
       content: $icon-arrow;
     }
   }
+  &.icon--comments {
+    &:before {
+      content: $icon-comments;
+    }
+  }
   &.icon--creat {
     &:before {
       content: $icon-creat;
@@ -87,6 +92,11 @@ $global-font-icon: 'social';
       content: $icon-pint;
     }
   }
+  &.icon--quote-img {
+    &:before {
+      content: $icon-quote-img;
+    }
+  }
   &.icon--right-arrow {
     &:before {
       content: $icon-right-arrow;
@@ -115,6 +125,11 @@ $global-font-icon: 'social';
   &.icon--users {
     &:before {
       content: $icon-users;
+    }
+  }
+  &.icon--visit {
+    &:before {
+      content: $icon-visit;
     }
   }
   &.icon--web-des {

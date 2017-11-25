@@ -7,6 +7,7 @@
       iconfont     = require("gulp-iconfont"),
       svgstore     = require('gulp-svgstore'),
       svgmin       = require('gulp-svgmin'),
+      plumber      = require('gulp-plumber'),
       consolidate  = require("gulp-consolidate");
 
 gulp.task('svgstore', function () {
@@ -31,6 +32,7 @@ gulp.task('svgstore', function () {
 
 gulp.task('sass', function () {
   return gulp.src('assets/scss/**/*.scss')
+    .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass({
       output_style: 'compressed',
@@ -99,4 +101,9 @@ gulp.task("build:icons", function() {
   gulp.task('iconreplace', function(){
     return gulp.src('assets/icons/**/*.svg')
     .pipe(gulp.dest('dist/icons/'));
+  });
+
+  gulp.task('js:replace', function(){
+    return gulp.src('assets/libs/*.js')
+    .pipe(gulp.dest('dist/libs/'));
   });
