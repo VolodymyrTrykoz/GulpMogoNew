@@ -1404,7 +1404,23 @@ hr {
   padding-left: 4px;
   letter-spacing: -0.3px; }
 
-.blogs-top-indent {
-  margin-top: 30px; }
+.footer-top-indent {
+  margin: 30px 0; }
+
+.instagram__img {
+  border: 1px solid #fff;
+  margin: 0;
+  padding: 0; }
+
+.instagram__img-size {
+  width: 100%; }
+
+.copirighter {
+  text-align: center;
+  padding: 20px;
+  text-transform: none; }
+
+.footer__text-name {
+  color: #f49f9f; }
 
 /*# sourceMappingURL=style.css.map */
