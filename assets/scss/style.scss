@@ -55,13 +55,19 @@ ul, li {
   width: 1200px;
   margin: 0 auto;
 
+
 }
 
 .header-logo {
+  @extend %transition;   
   font-size: 3rem;
   font-weight: 800;
   letter-spacing: -0.1rem;
   color: #fff;
+       &:hover {
+        color: $link-hover;
+        
+      }
 }
 
 .header__item-box {
@@ -157,6 +163,7 @@ ul, li {
   background-position: center;
   position: relative;
   overflow: hidden;
+  
   
 
 }
@@ -434,6 +441,7 @@ ul, li {
 .service-box {
   padding-top: 10rem;
   padding-bottom: 3.5rem;
+  overflow: hidden;
 }
 
 .service__item-icon  {
@@ -758,6 +766,7 @@ ul, li {
 
 .brands-box__position {
   @extend %flex-align-center;
+  flex-wrap: wrap;
 }
 
 .gallery-box {
@@ -912,15 +921,19 @@ ul, li {
           padding: 15px;
           font-family: $primary_font;
           background-color: $light-blue;
-          top: 53%;
+          top: 50%;
           transform: translate(-15%,-20%);
           color: #fff;
           font-size: 3rem;
           font-weight: 700;
           text-align: center;
           line-height: 18px;
+              & img {
+                max-width: 100%;
+              }
           }
   }
+
 
   .data__month {
     font-size: 15px;
@@ -928,6 +941,10 @@ ul, li {
     font-style: italic;
     font-family: $secondary_font;
     padding-top: 10px;
+  }
+
+  .month__img {
+    width: 100%;
   }
 
   hr {
@@ -993,10 +1010,14 @@ ul, li {
 
 .followers { 
         &__logo {
+            @extend %transition; 
             color: #ccc;
             font-weight: 700;
             font-size: 46px;
             line-height: 30px;
+               &:hover {
+                      color: $link-hover;
+                      }
         }
         &__text {
             @extend %ordinary-text;
